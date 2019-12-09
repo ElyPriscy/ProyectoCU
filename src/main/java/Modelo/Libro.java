@@ -7,7 +7,6 @@ public class Libro {
 	private String autor; 
 	private String año;
 	private String editorial;
-	private boolean estado;
 	private int cantidad; 
 	private String imagenS;
 	private String imagenM;
@@ -45,12 +44,6 @@ public class Libro {
 	public void setEditorial(String editorial) {
 		this.editorial = editorial;
 	}
-	public boolean isEstado() {
-		return estado;
-	}
-	public void setEstado(boolean estado) {
-		this.estado = estado;
-	}
 	public int getCantidad() {
 		return cantidad;
 	}
@@ -84,7 +77,7 @@ public class Libro {
 	@Override
 	public String toString() {
 		return "Libro [isbn=" + isbn + ", titulo=" + titulo + ", autor=" + autor + ", año=" + año + ", editorial="
-				+ editorial + ", estado=" + estado + ", cantidad=" + cantidad + ", imagenS=" + imagenS + ", imagenM="
+				+ editorial  + ", cantidad=" + cantidad + ", imagenS=" + imagenS + ", imagenM="
 				+ imagenM + ", imagenG=" + imagenG + ", votos=" + votos + "]";
 	} 
 	
