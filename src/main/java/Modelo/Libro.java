@@ -13,6 +13,8 @@ public class Libro {
 	private String imagenM;
 	private String imagenG;
 	private int votos;
+	
+	
 	public int getIsbn() {
 		return isbn;
 	}
