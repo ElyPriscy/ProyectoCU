@@ -12,6 +12,7 @@ public class Libro {
 	private String imagenM;
 	private String imagenG;
 	private int votos;
+	private Categoria categoria;
 	
 	
 	public int getIsbn() {
@@ -73,6 +74,13 @@ public class Libro {
 	}
 	public void setVotos(int votos) {
 		this.votos = votos;
+	}
+	
+	public Categoria getCategoria() {
+		return categoria;
+	}
+	public void setCategoria(Categoria categoria) {
+		this.categoria = categoria;
 	}
 	@Override
 	public String toString() {
