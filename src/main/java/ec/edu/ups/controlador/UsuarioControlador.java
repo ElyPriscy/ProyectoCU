@@ -19,6 +19,7 @@ public class UsuarioControlador {
 	private Categoria categoria;
 	@Inject
 	private UsuarioDAO udao;
+	private String atributoprueba;
 	
 	
 	@PostConstruct
