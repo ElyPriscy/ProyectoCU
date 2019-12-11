@@ -1,16 +1,23 @@
 package ec.edu.ups.modelo;
 
-public class Categoria {
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
 
-	private int id;
+@Entity
+public class Categoria {
+	@Id
+	private int CategoriaID;
+	@NotNull
 	private String nombre;
 	private String descripcion;
 	
-	public int getId() {
-		return id;
+	
+	public int getCategoriaID() {
+		return CategoriaID;
 	}
-	public void setId(int id) {
-		this.id = id;
+	public void setCategoriaID(int categoriaID) {
+		CategoriaID = categoriaID;
 	}
 	public String getNombre() {
 		return nombre;

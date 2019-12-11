@@ -1,7 +1,11 @@
 package ec.edu.ups.modelo;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Usuario {
-	
+	@Id
 	private int userId;
 	private String nombre;
 	private String apellido;
